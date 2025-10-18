@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Recorder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Recorder</h1>
+
+        <div class="expense-input">
+            <input type="number" id="expense-amount" placeholder="Amount" min="0" step="0.01">
+            <input type="text" id="expense-description" placeholder="Description">
+            <button id="add-expense-btn">Add Expense</button>
+        </div>
+
+        <div class="current-month-expenses">
+            <h2>Current Month's Expenses (<span id="current-month-display"></span>)</h2>
+            <ul id="expense-list">
+                <!-- Expenses will be listed here -->
+            </ul>
+            <p>Total: $<span id="current-month-total">0.00</span></p>
+            <button id="clear-data-btn" class="clear-button">Delete All Current Month Expenses</button>
+        </div>
+
+        <div class="trend-analysis">
+            <h2>Monthly Expense Trend (Last 3 Months)</h2>
+            <div id="trend-chart">
+                <!-- Trend bars will be rendered here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
